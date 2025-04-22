@@ -12,13 +12,14 @@
       background: url('contact-vibe.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #ffffff;
+      min-height: 100vh;
     }
 
     .container {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       padding: 40px;
       text-align: center;
     }
@@ -26,39 +27,47 @@
     .contact-box {
       max-width: 700px;
       padding: 40px;
-      background: rgba(0, 0, 0, 0.5); /* dark semi-transparent background behind text */
+      background: rgba(0, 0, 0, 0.7);
       border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(5px);
     }
 
     h1 {
       font-size: 32px;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
       color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    .company-name {
+      font-size: 20px;
+      color: #FFA726;
+      margin-bottom: 30px;
+      font-weight: bold;
     }
 
     p {
       font-size: 18px;
-      margin: 10px 0;
-      color: #ffffff;
+      margin: 15px 0;
+      line-height: 1.6;
+      color: #f5f5f5;
     }
 
     strong {
-      font-weight: bold;
-      color: #ffffff;
+      color: #FFA726;
     }
 
     @media screen and (max-width: 600px) {
       .contact-box {
-        padding: 20px;
+        padding: 25px;
+        margin: 15px;
       }
-
       h1 {
-        font-size: 26px;
+        font-size: 28px;
       }
-
-      p {
-        font-size: 16px;
+      .company-name {
+        font-size: 18px;
       }
     }
   </style>
@@ -67,10 +76,11 @@
   <div class="container">
     <div class="contact-box">
       <h1>Contact Us</h1>
+      <div class="company-name">InfraEdge Technologies</div>
       <p><strong>Address:</strong> 2355 Westwood Blvd, Los Angeles, CA 90064</p>
       <p><strong>Phone:</strong> (310) 773-8885</p>
-      <p><strong>Email:</strong> info@infraedge.com</p>
-      <p><strong>Business Hours:</strong> Available 24 hours a day, 7 days a week</p>
+      <p><strong>Email:</strong> info@infraedgetechnologies.com</p>
+      <p><strong>Business Hours:</strong> Available 24/7</p>
     </div>
   </div>
 </body>
