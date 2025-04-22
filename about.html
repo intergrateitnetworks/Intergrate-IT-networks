@@ -2,86 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us - InfraEdge Technologies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us - InfraEdge Technologies</title>
   <style>
     body {
       margin: 0;
-      padding: 0;
       font-family: Arial, sans-serif;
-      background: url('contact-vibe.jpg') no-repeat center center fixed;
+      background-image: url('about-bg.jpg');
       background-size: cover;
-      color: #ffffff;
-      min-height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
     }
 
-    .container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.75);
       padding: 40px;
+      max-width: 800px;
+      margin: 100px auto;
+      border-radius: 12px;
       text-align: center;
     }
 
-    .contact-box {
-      max-width: 700px;
-      padding: 40px;
-      background: rgba(0, 0, 0, 0.7);
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
-      backdrop-filter: blur(5px);
-    }
-
     h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-      color: #ffffff;
-      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    }
-
-    .company-name {
-      font-size: 20px;
-      color: #FFA726;
-      margin-bottom: 30px;
-      font-weight: bold;
+      font-size: 36px;
+      margin-bottom: 20px;
     }
 
     p {
       font-size: 18px;
-      margin: 15px 0;
       line-height: 1.6;
-      color: #f5f5f5;
-    }
-
-    strong {
-      color: #FFA726;
-    }
-
-    @media screen and (max-width: 600px) {
-      .contact-box {
-        padding: 25px;
-        margin: 15px;
-      }
-      h1 {
-        font-size: 28px;
-      }
-      .company-name {
-        font-size: 18px;
-      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="contact-box">
-      <h1>Contact Us</h1>
-      <div class="company-name">InfraEdge Technologies</div>
-      <p><strong>Address:</strong> 2355 Westwood Blvd, Los Angeles, CA 90064</p>
-      <p><strong>Phone:</strong> (310) 773-8885</p>
-      <p><strong>Email:</strong> info@infraedgetechnologies.com</p>
-      <p><strong>Business Hours:</strong> Available 24/7</p>
-    </div>
+  <div class="overlay">
+    <h1>About InfraEdge Technologies</h1>
+    <p>With over 20 years of experience in IT and service, InfraEdge Technologies delivers exceptional solutions for residential, commercial, and government clients. Based in Los Angeles, California, we proudly serve clients across the entire state.</p>
+    <p>Our team specializes in reliable network installations, smart home setups, security systems, and ongoing maintenance — all tailored to meet your needs.</p>
   </div>
 </body>
 </html>
