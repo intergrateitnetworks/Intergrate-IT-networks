@@ -10,7 +10,7 @@
       font-family: Arial, sans-serif;
       background: url('contact-bg.jpg') no-repeat center center fixed;
       background-size: cover;
-      color: #222; /* Dark font for light background */
+      color: #222;
     }
 
     .overlay {
@@ -48,10 +48,26 @@
     .info-label {
       font-weight: bold;
     }
+
+    a {
+      color: #222;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <div class="overlay">
     <div class="contact-box">
       <h1>Contact Us</h1>
-      <p class="info-item"><span class="info-label">Address:</span> 2355
+      <p class="info-item"><span class="info-label">Address:</span> 2355 Westwood Blvd, Los Angeles, CA 90064</p>
+      <p class="info-item"><span class="info-label">Phone:</span> (310) 773-8885</p>
+      <p class="info-item"><span class="info-label">Email:</span> <a href="mailto:info@infraedge.com">info@infraedge.com</a></p>
+      <p class="info-item"><span class="info-label">Business Hours:</span> Available 24 hours a day, 7 days a week</p>
+    </div>
+  </div>
+</body>
+</html>
