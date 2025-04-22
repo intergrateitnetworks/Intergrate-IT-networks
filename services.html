@@ -1,122 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - InfraEdge Technologies</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-image: url('service%20photo.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh;
-            color: #000;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services - InfraEdge Technologies</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('service_photo.jpg') no-repeat center center fixed; /* Fixed file name */
+      background-size: cover;
+      color: #000;
+    }
 
-        nav {
-            text-align: center;
-            padding: 1em;
-            background-color: rgba(255, 255, 255, 0.8);
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-        }
+    .content-container {
+      padding: 50px 20px;
+      background-color: rgba(255, 255, 255, 0.85);
+    }
 
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #000;
-            font-weight: bold;
-        }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
 
-        .content {
-            padding: 100px 20px 40px;
-            background-color: rgba(255, 255, 255, 0.85);
-            max-width: 800px;
-            margin: auto;
-            border-radius: 20px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        }
+    .service-box {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 800px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-        h2 {
-            text-align: center;
-            font-size: 2em;
-            margin-bottom: 30px;
-        }
+    .service-box h3 {
+      margin-top: 0;
+      color: #333;
+    }
 
-        .service {
-            background-color: #fff;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .service h3 {
-            margin: 0 0 10px;
-        }
-
-        .service p {
-            margin: 0;
-        }
-    </style>
+    .service-box p {
+      margin: 10px 0 0;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
+  <div class="content-container">
+    <h2>What We Offer</h2>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="services.html">Services</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
-    <div class="content">
-        <h2>What We Offer</h2>
-
-        <div class="service">
-            <h3>Network Cabling</h3>
-            <p>High-performance structured cabling solutions for reliable, efficient data and voice communication networks.</p>
-        </div>
-
-        <div class="service">
-            <h3>Device Installation</h3>
-            <p>Expert setup and integration of your devices for smooth operation and optimized performance.</p>
-        </div>
-
-        <div class="service">
-            <h3>Equipment Installation</h3>
-            <p>Professional equipment installation for homes, offices, and commercial environments.</p>
-        </div>
-
-        <div class="service">
-            <h3>Complete Network Setup</h3>
-            <p>Comprehensive setup services from planning to execution, ensuring full network functionality.</p>
-        </div>
-
-        <div class="service">
-            <h3>Smart Home Setup</h3>
-            <p>Smart home automation solutions tailored to your needs for convenience, security, and efficiency.</p>
-        </div>
-
-        <div class="service">
-            <h3>Security Systems</h3>
-            <p>Installation and maintenance of advanced security systems for homes and businesses.</p>
-        </div>
-
-        <div class="service">
-            <h3>Break/Fix Services</h3>
-            <p>On-demand repair and troubleshooting services to keep your systems running smoothly.</p>
-        </div>
-
-        <div class="service">
-            <h3>Monthly Maintenance</h3>
-            <p>Regular system checkups and updates to ensure optimal performance and security.</p>
-        </div>
+    <div class="service-box">
+      <h3>Network Cabling</h3>
+      <p>High-performance structured cabling solutions for reliable, efficient data and voice communication networks.</p>
     </div>
 
+    <div class="service-box">
+      <h3>Device Installation</h3>
+      <p>Expert setup and integration of your devices for smooth operation and optimized performance.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>Equipment Installation</h3>
+      <p>Professional equipment installation for homes, offices, and commercial environments.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>Complete Network Setup</h3>
+      <p>Comprehensive setup services from planning to execution, ensuring full network functionality.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>Smart Home Setup</h3>
+      <p>Customized smart home technology solutions for convenience, security, and energy efficiency.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>Security Systems</h3>
+      <p>Advanced security camera and alarm system installations for robust protection.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>Break/Fix</h3>
+      <p>Responsive repair services for quick resolution of hardware and network issues.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>Monthly Maintenance</h3>
+      <p>Scheduled maintenance to keep systems running smoothly and prevent downtime.</p>
+    </div>
+  </div>
 </body>
 </html>
