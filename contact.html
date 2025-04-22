@@ -9,10 +9,33 @@
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      background: url('contact-vibe.jpg') no-repeat center center fixed;
+      background: url('contact-bg.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #ffffff;
       min-height: 100vh;
+    }
+
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 14px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 10;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+
+    .navbar a:hover {
+      background-color: #163d68;
+      padding: 6px 10px;
+      border-radius: 4px;
     }
 
     .container {
@@ -73,15 +96,27 @@
   </style>
 </head>
 <body>
+
+  <div class="navbar">
+    <div><a href="index.html">InfraEdge Technologies</a></div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
   <div class="container">
     <div class="contact-box">
       <h1>Contact Us</h1>
       <div class="company-name">InfraEdge Technologies</div>
       <p><strong>Address:</strong> 2355 Westwood Blvd, Los Angeles, CA 90064</p>
       <p><strong>Phone:</strong> (310) 773-8885</p>
-      <p><strong>Email:</strong> info@infraedgetechnologies.com</p>
+      <p><strong>Email:</strong> contact@infraedge.com</p>
       <p><strong>Business Hours:</strong> Available 24/7</p>
     </div>
   </div>
+
 </body>
 </html>
