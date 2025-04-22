@@ -3,107 +3,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About Us | InfraEdge Technologies</title>
+  <title>About - InfraEdge Technologies</title>
   <style>
-    body {
+    body, html {
       margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-    }
-
-    header {
-      background-color: #111;
-      color: #fff;
-      padding: 15px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 20px;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
+      color: white;
     }
 
     .about-section {
-      background-color: #ffffff;
+      background-image: url('about-background.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
       display: flex;
-      flex-wrap: wrap;
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: 40px auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
     }
 
-    .about-image {
-      flex: 1 1 400px;
-      padding: 20px;
+    .content-box {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px;
+      border-radius: 15px;
+      max-width: 700px;
     }
 
-    .about-image img {
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-    }
-
-    .about-text {
-      flex: 1 1 400px;
-      padding: 20px;
-    }
-
-    .about-text h2 {
-      font-size: 28px;
+    h1 {
+      font-size: 48px;
       margin-bottom: 20px;
-      color: #111;
     }
 
-    .about-text p {
-      font-size: 16px;
+    p {
+      font-size: 20px;
       line-height: 1.6;
     }
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #111;
-      color: #fff;
-      margin-top: 40px;
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 32px;
+      }
+
+      p {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <h1>InfraEdge Technologies</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <section class="about-section">
-    <div class="about-image">
-      <img src="images/about-photo.png" alt="About InfraEdge Technologies">
-    </div>
-    <div class="about-text">
-      <h2>About InfraEdge Technologies</h2>
+  <div class="about-section">
+    <div class="content-box">
+      <h1>About InfraEdge Technologies</h1>
       <p>
-        With over 20 years of experience in the IT and service industry, InfraEdge Technologies is your trusted partner for cutting-edge network and smart system solutions. We proudly serve residential, commercial, and government clients throughout California. 
+        With over 20 years of experience in IT and service, InfraEdge Technologies has built a trusted reputation 
+        across residential, commercial, and government sectors. Based in Los Angeles, California, we proudly serve 
+        clients across the entire state. Our mission is to deliver seamless, reliable technology solutions with 
+        integrity and expertise you can count on.
       </p>
-      <p>
-        Based in Los Angeles, our team brings deep technical expertise and a dedication to reliable service. Whether it's structured cabling, network setup, smart
+    </div>
+  </div>
+</body>
+</html>
