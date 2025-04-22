@@ -2,67 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>InfraEdge Technologies</title>
   <style>
-    body, html {
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
       height: 100%;
       font-family: Arial, sans-serif;
     }
-
-    .navbar {
-      background-color: #1f4e79;
-      text-align: center;
-      padding: 1rem 0;
-    }
-
-    .navbar a {
-      color: white;
-      margin: 0 20px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
-    }
-
-    .navbar a:hover {
-      text-decoration: underline;
-    }
-
     .hero {
-      height: calc(100vh - 72px); /* Adjust height minus navbar */
-      background: url('home-bg.jpg') no-repeat center center/cover;
+      background-image: url('./home-bg.jpg');
+      background-color: #1f4e79; /* Fallback color if image fails to load */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
-      text-align: center;
       color: white;
+      text-align: center;
+      position: relative;
+      z-index: 1;
     }
-
-    .hero h1 {
-      font-size: 48px;
-      margin: 0;
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for better text visibility */
+      z-index: -1;
     }
-
-    .hero p {
-      font-size: 24px;
-      margin-top: 10px;
+    nav {
+      background-color: #1f4e79;
+      padding: 1em;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 2;
+    }
+    nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    p {
+      font-size: 1.5em;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
     }
   </style>
 </head>
 <body>
-  <div class="navbar">
+  <nav>
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
-  </div>
-
-  <div class="hero">
+  </nav>
+  <section class="hero">
     <h1>InfraEdge Technologies</h1>
     <p>Your Trusted IT Partner</p>
-  </div>
+  </section>
 </body>
 </html>
