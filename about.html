@@ -2,57 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact Us - InfraEdge Technologies</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: url('images/contact-bg-vibrant.jpg') no-repeat center center fixed;
-      background-size: cover;
       font-family: Arial, sans-serif;
+      background: url('contact-vibe.jpg') no-repeat center center fixed;
+      background-size: cover;
     }
 
-    .contact-container {
-      background-color: rgba(255, 255, 255, 0.95);
-      max-width: 600px;
-      margin: 100px auto;
-      padding: 40px;
-      border-radius: 20px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-      color: #000;
-      text-align: left;
-    }
-
-    .contact-container h1 {
-      margin-top: 0;
-      font-size: 32px;
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       text-align: center;
+      background-color: rgba(255, 255, 255, 0.4); /* Lowered opacity for better background visibility */
+      margin: 0 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     }
 
-    .contact-container p {
-      font-size: 18px;
-      margin: 12px 0;
+    .contact-box {
+      padding: 40px;
+      max-width: 600px;
     }
 
-    .contact-container a {
+    h1 {
+      font-size: 32px;
+      margin-bottom: 30px;
       color: #000;
-      text-decoration: none;
-      font-weight: bold;
     }
 
-    .contact-container a:hover {
-      text-decoration: underline;
+    p {
+      font-size: 18px;
+      margin: 10px 0;
+      color: #000;
+    }
+
+    strong {
+      color: #000;
+    }
+
+    @media screen and (max-width: 600px) {
+      .contact-box {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      p {
+        font-size: 16px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="contact-container">
-    <h1>Contact Us</h1>
-    <p><strong>Address:</strong> 2355 Westwood Blvd, Los Angeles, CA 90064</p>
-    <p><strong>Phone:</strong> 310-773-8885</p>
-    <p><strong>Email:</strong> <a href="mailto:contact@infraedge.com">contact@infraedge.com</a></p>
-    <p><strong>Hours:</strong> Available 24 hours, 7 days a week</p>
+  <div class="container">
+    <div class="contact-box">
+      <h1>Contact Us</h1>
+      <p><strong>Address:</strong> 2355 Westwood Blvd, Los Angeles, CA 90064</p>
+      <p><strong>Phone:</strong> (310) 773-8885</p>
+      <p><strong>Email:</strong> info@infraedge.com</p>
+      <p><strong>Business Hours:</strong> Available 24 hours a day, 7 days a week</p>
+    </div>
   </div>
 </body>
 </html>
