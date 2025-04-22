@@ -2,67 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About - InfraEdge Technologies</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - InfraEdge Technologies</title>
   <style>
-    body, html {
+    body {
       margin: 0;
       padding: 0;
-      font-family: Arial, sans-serif;
-      color: white;
-    }
-
-    .about-section {
-      background-image: url('about-background.jpg');
+      background: url('images/contact-bg-vibrant.jpg') no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .contact-container {
+      background-color: rgba(255, 255, 255, 0.95);
+      max-width: 600px;
+      margin: 100px auto;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      color: #000;
+      text-align: left;
+    }
+
+    .contact-container h1 {
+      margin-top: 0;
+      font-size: 32px;
       text-align: center;
-      padding: 40px;
     }
 
-    .content-box {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 40px;
-      border-radius: 15px;
-      max-width: 700px;
+    .contact-container p {
+      font-size: 18px;
+      margin: 12px 0;
     }
 
-    h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
+    .contact-container a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
     }
 
-    p {
-      font-size: 20px;
-      line-height: 1.6;
-    }
-
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 32px;
-      }
-
-      p {
-        font-size: 16px;
-      }
+    .contact-container a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <div class="about-section">
-    <div class="content-box">
-      <h1>About InfraEdge Technologies</h1>
-      <p>
-        With over 20 years of experience in IT and service, InfraEdge Technologies has built a trusted reputation 
-        across residential, commercial, and government sectors. Based in Los Angeles, California, we proudly serve 
-        clients across the entire state. Our mission is to deliver seamless, reliable technology solutions with 
-        integrity and expertise you can count on.
-      </p>
-    </div>
+  <div class="contact-container">
+    <h1>Contact Us</h1>
+    <p><strong>Address:</strong> 2355 Westwood Blvd, Los Angeles, CA 90064</p>
+    <p><strong>Phone:</strong> 310-773-8885</p>
+    <p><strong>Email:</strong> <a href="mailto:contact@infraedge.com">contact@infraedge.com</a></p>
+    <p><strong>Hours:</strong> Available 24 hours, 7 days a week</p>
   </div>
 </body>
 </html>
