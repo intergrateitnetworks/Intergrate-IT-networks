@@ -4,51 +4,98 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Services - InfraEdge Technologies</title>
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+
+    .services {
+      background-image: url('service photo.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .services::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    nav {
+      background-color: #003366;
+      padding: 1rem 0;
+      text-align: center;
+      width: 100%;
+      z-index: 2;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 0;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+    }
+  </style>
 </head>
 <body>
-  <div class="content-container">
-    <h2>What We Offer</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-    <div class="service-box">
-      <h3>Network Cabling</h3>
-      <p>High-performance structured cabling solutions for reliable, efficient data and voice communication networks.</p>
-    </div>
-
-    <div class="service-box">
-      <h3>Device Installation</h3>
-      <p>Expert setup and integration of your devices for smooth operation and optimized performance.</p>
-    </div>
-
-    <div class="service-box">
-      <h3>Equipment Installation</h3>
-      <p>Professional equipment installation for homes, offices, and commercial environments.</p>
-    </div>
-
-    <div class="service-box">
-      <h3>Complete Network Setup</h3>
-      <p>Comprehensive setup services from planning to execution, ensuring full network functionality.</p>
-    </div>
-
-    <div class="service-box">
-      <h3>Smart Home Setup</h3>
-      <p>Customized smart home technology solutions for convenience, security, and energy efficiency.</p>
-    </div>
-
-    <div class="service-box">
-      <h3>Security Systems</h3>
-      <p>Advanced security camera and alarm system installations for robust protection.</p>
-    </div>
-
-    <div class="service-box">
-      <h3>Break/Fix</h3>
-      <p>Responsive repair services for quick resolution of hardware and network issues.</p>
-    </div>
-
-    <div class="service-box">
-      <h3>Monthly Maintenance</h3>
-      <p>Scheduled maintenance to keep systems running smoothly and prevent downtime.</p>
-    </div>
+  <div class="services">
+    <h1>What We Offer</h1>
+    <ul>
+      <li>Network Cabling</li>
+      <li>Device Installation</li>
+      <li>Equipment Installation</li>
+      <li>Complete Network Setup</li>
+      <li>Smart Home Setup</li>
+      <li>Security Systems</li>
+      <li>Break/Fix</li>
+      <li>Monthly Maintenance</li>
+    </ul>
   </div>
 </body>
 </html>
