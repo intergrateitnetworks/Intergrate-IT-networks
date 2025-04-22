@@ -9,54 +9,54 @@
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      background: url('contact-vibe.jpg') no-repeat center center fixed;
+      background: linear-gradient(rgba(0,0,0,0.6), url('contact-vibe.jpg') no-repeat center center fixed;
       background-size: cover;
+      color: #ffffff;
+      min-height: 100vh;
     }
 
     .container {
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
+      padding: 40px;
       text-align: center;
-      background-color: rgba(255, 255, 255, 0.4); /* Lowered opacity for better background visibility */
-      margin: 0 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     }
 
     .contact-box {
+      max-width: 700px;
       padding: 40px;
-      max-width: 600px;
+      background: rgba(0, 0, 0, 0.7); /* Darker background for better contrast */
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+      backdrop-filter: blur(5px); /* Modern glass effect */
     }
 
     h1 {
       font-size: 32px;
       margin-bottom: 30px;
-      color: #000;
+      color: #ffffff;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     }
 
     p {
       font-size: 18px;
-      margin: 10px 0;
-      color: #000;
+      margin: 15px 0;
+      line-height: 1.6;
     }
 
     strong {
-      color: #000;
+      color: #FFA726; /* Orange accent color */
     }
 
     @media screen and (max-width: 600px) {
       .contact-box {
-        padding: 20px;
+        padding: 25px;
+        margin: 15px;
       }
-
       h1 {
-        font-size: 26px;
-      }
-
-      p {
-        font-size: 16px;
+        font-size: 28px;
       }
     }
   </style>
@@ -68,7 +68,7 @@
       <p><strong>Address:</strong> 2355 Westwood Blvd, Los Angeles, CA 90064</p>
       <p><strong>Phone:</strong> (310) 773-8885</p>
       <p><strong>Email:</strong> info@infraedge.com</p>
-      <p><strong>Business Hours:</strong> Available 24 hours a day, 7 days a week</p>
+      <p><strong>Business Hours:</strong> Available 24/7</p>
     </div>
   </div>
 </body>
