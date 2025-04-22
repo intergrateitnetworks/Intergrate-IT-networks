@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>InfraEdge Technologies | Reliable IT Solutions</title>
     <style>
         :root {
@@ -10,14 +11,8 @@
             --white: #FFFFFF;
         }
 
-        * {
+        body {
             margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html, body {
-            height: 100%;
             font-family: Arial, sans-serif;
         }
 
@@ -31,8 +26,7 @@
             color: white;
             text-decoration: none;
             margin: 0 1.5rem;
-            font-size: 1.1rem;
-            transition: color 0.3s;
+            font-weight: bold;
         }
 
         nav a:hover {
@@ -40,42 +34,28 @@
         }
 
         .hero {
-            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('home-bg.jpg') no-repeat center center fixed;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('home-bg.jpg');
             background-size: cover;
-            min-height: calc(100vh - 64px); /* Full height minus nav */
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
             color: white;
             text-align: center;
-            flex-direction: column;
-            padding: 2rem;
         }
 
         .hero h1 {
             font-size: 3rem;
-            margin-bottom: 1rem;
+            margin: 0;
         }
 
         .hero h2 {
-            font-size: 1.75rem;
-            font-weight: 300;
-        }
-
-        @media screen and (max-width: 768px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero h2 {
-                font-size: 1.25rem;
-            }
-
-            nav a {
-                display: inline-block;
-                margin: 0 0.75rem;
-                font-size: 1rem;
-            }
+            font-size: 1.5rem;
+            margin-top: 1rem;
+            font-weight: normal;
         }
     </style>
 </head>
