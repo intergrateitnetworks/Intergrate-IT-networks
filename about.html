@@ -7,62 +7,113 @@
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
       color: #333;
     }
 
-    .navbar {
+    header {
       background-color: #111;
-      padding: 14px 20px;
+      color: #fff;
+      padding: 15px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      color: white;
     }
 
-    .navbar a {
-      color: white;
+    header h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    nav a {
+      color: #fff;
       text-decoration: none;
       margin-left: 20px;
       font-weight: bold;
     }
 
-    .about-image-container img {
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .about-section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .about-image {
+      flex: 1 1 400px;
+      padding: 20px;
+    }
+
+    .about-image img {
       width: 100%;
       height: auto;
-      display: block;
+      border-radius: 12px;
     }
 
-    .content {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-      text-align: center;
+    .about-text {
+      flex: 1 1 400px;
+      padding: 20px;
     }
 
-    .content h1 {
-      font-size: 2.5em;
+    .about-text h2 {
+      font-size: 28px;
       margin-bottom: 20px;
+      color: #111;
     }
 
-    .content p {
-      font-size: 1.1em;
-      line-height: 1.7;
+    .about-text p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: #fff;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
 
-  <div class="navbar">
-    <div><strong>InfraEdge Technologies</strong></div>
-    <div>
+  <header>
+    <h1>InfraEdge Technologies</h1>
+    <nav>
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
-    </div>
-  </div>
+    </nav>
+  </header>
 
-  <div class="about-image-container">
-    <img src="
+  <section class="about-section">
+    <div class="about-image">
+      <img src="images/about-photo.png" alt="About InfraEdge Technologies">
+    </div>
+    <div class="about-text">
+      <h2>About InfraEdge Technologies</h2>
+      <p>
+        With over 20 years of experience in the IT and service industry, InfraEdge Technologies is your trusted partner for cutting-edge network and smart system solutions. We proudly serve residential, commercial, and government clients throughout California. 
+      </p>
+      <p>
+        Based in Los Angeles, our team brings deep technical expertise and a dedication to reliable service. Whether it's structured cabling, network setup, smart home integration, or ongoing support—you can count on us to deliver high-quality results tailored to your needs.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 InfraEdge Technologies. All rights reserved.
+  </footer>
+
+</body>
+</html>
