@@ -1,102 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>InfraEdge Technologies | Services</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | InfraEdge Technologies</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
-    body, html {
+    body {
       margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: Arial, sans-serif;
-    }
-
-    .hero {
-      background: url('infra-services-bg.jpg') no-repeat center center;
-      background-size: cover;
-      height: 100vh;
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 20px;
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 10px 20px;
-      border-radius: 10px;
-    }
-
-    .services-list {
-      background-color: rgba(0, 0, 0, 0.6);
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 800px;
-      width: 90%;
-    }
-
-    .services-list ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .services-list li {
-      font-size: 20px;
-      padding: 10px 0;
-      border-bottom: 1px solid #ddd;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
     }
 
     nav {
-      position: absolute;
-      top: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 10px 20px;
-      border-radius: 8px;
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
 
     nav a {
-      color: white;
-      text-decoration: none;
       margin: 0 15px;
+      text-decoration: none;
+      color: #333;
       font-weight: bold;
+      font-size: 16px;
     }
 
-    nav a:hover {
-      text-decoration: underline;
+    .services-section {
+      position: relative;
+      background-image: url('service photo.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    .services-section .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .services-content {
+      position: relative;
+      z-index: 2;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .services-content h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .service {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 25px;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      transition: transform 0.3s ease;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+    }
+
+    footer {
+      background-color: #f2f2f2;
+      padding: 40px 20px;
+      text-align: center;
+      color: #555;
     }
   </style>
 </head>
 <body>
-
   <nav>
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
     <a href="services.html">Services</a>
+    <a href="about.html">About</a>
     <a href="contact.html">Contact</a>
   </nav>
 
-  <div class="hero">
-    <h1>Our Services</h1>
-    <div class="services-list">
-      <ul>
-        <li>Network Cabling</li>
-        <li>Device Installation</li>
-        <li>Equipment Installation</li>
-        <li>Complete Network Setup</li>
-        <li>Smart Home Setup</li>
-        <li>Security Systems</li>
-        <li>Break/Fix Services</li>
-        <li>Monthly Maintenance</li>
-      </ul>
+  <section class="services-section">
+    <div class="overlay"></div>
+    <div class="services-content">
+      <h1>Our Services</h1>
+      <div class="services-grid">
+        <div class="service">Network Cabling</div>
+        <div class="service">Device Installation</div>
+        <div class="service">Equipment Installation</div>
+        <div class="service">Complete Network Setup</div>
+        <div class="service">Smart Home Setup</div>
+        <div class="service">Security Systems</div>
+        <div class="service">Break/Fix</div>
+        <div class="service">Monthly Maintenance</div>
+      </div>
     </div>
-  </div>
+  </section>
 
+  <footer>
+    &copy; 2025 InfraEdge Technologies. All rights reserved.
+  </footer>
 </body>
 </html>
+
